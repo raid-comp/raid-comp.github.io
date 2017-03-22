@@ -175,7 +175,7 @@ function setComp(grp, comp)
 			spot = '<div class="block">';		
 			spot += '<div class="' + token + ' spot">';
 			
-			spot += '<img src="https://raidcomp.mmo-champion.com/img/' + token.replace(' ', '/') + '.gif" alt="' + token.split(' ', 2)[1] + '" />';
+			spot += '<img src="/img/' + token.replace(' ', '/') + '.gif" alt="' + token.split(' ', 2)[1] + '" />';
 			
 			spot += '<div class="name">' + txt + '</div>';			
 			spot += '</div></div>';

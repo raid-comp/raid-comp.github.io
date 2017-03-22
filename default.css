@@ -71,7 +71,7 @@ The building block for all draggables
 	margin: 0px;
 	padding: 0px;
 	z-index: 100;
-	background-image: url('https://raidcomp.mmo-champion.com/img/baseblock.jpg');
+	background-image: url('img/baseblock.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 	cursor: pointer;
@@ -194,7 +194,7 @@ Overall layout
 	height: 830px;
 	z-index: -100;
 	cursor: default;
-	background-image: url("https://raidcomp.mmo-champion.com/img/bg8.jpg");
+	background-image: url("img/bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -303,7 +303,7 @@ Tooltip
 .tooltip 
 {
 	border: 1px solid #444444;
-	background-image: url("https://raidcomp.mmo-champion.com/img/tooltip-bg.png");
+	background-image: url("img/tooltip-bg.png");
 	background-repeat: repeat;
 	background-position: center;
 	padding: 0 0 2px 0;
