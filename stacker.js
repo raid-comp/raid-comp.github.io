@@ -50,7 +50,7 @@ function highlightCat(spectoken)
       for(i = 0; i < urltoken2categories[spectoken].length; i++)
       {
             //$('#' + urltoken2categories[spectoken][i] + ' .catlink').css('color', '#41a5dc');
-            $('#' + urltoken2categories[spectoken][i]).css({backgroundImage: 'url(https://raidcomp.mmo-champion.com/img/category_highlight.jpg)', backgroundRepeat: 'repeat'});     
+            $('#' + urltoken2categories[spectoken][i]).css({backgroundImage: 'url(img/category_highlight.jpg)', backgroundRepeat: 'repeat'});     
       }
 }
 
@@ -77,13 +77,13 @@ function highlightSpec(cat)
             $("#classes ." + t[0]).each(function()
             {
                   if($(this).hasClass(t[1]))
-                        $(this).parent().css({backgroundImage: 'url(https://raidcomp.mmo-champion.com/img/baseblock_highlight.jpg)'});
+                        $(this).parent().css({backgroundImage: 'url(img/baseblock_highlight.jpg)'});
             });
             
             $("#layout ." + t[0]).each(function()
             {
                   if($(this).hasClass(t[1]))
-                        $(this).parent().css({backgroundImage: 'url(https://raidcomp.mmo-champion.com/img/baseblock_highlight.jpg)'});
+                        $(this).parent().css({backgroundImage: 'url(img/baseblock_highlight.jpg)'});
             });
       }
 }
@@ -98,13 +98,13 @@ function restoreSpec(cat)
             $("#classes ." + t[0]).each(function()
             {
                   if($(this).hasClass(t[1]))
-                        $(this).parent().css({backgroundImage: 'url(https://raidcomp.mmo-champion.com/img/baseblock.jpg)'}); 
+                        $(this).parent().css({backgroundImage: 'url(img/baseblock.jpg)'}); 
             });
             
             $("#layout ." + t[0]).each(function()
             {
                   if($(this).hasClass(t[1]))
-                        $(this).parent().css({backgroundImage: 'url(https://raidcomp.mmo-champion.com/img/baseblock.jpg)'}); 
+                        $(this).parent().css({backgroundImage: 'url(img/baseblock.jpg)'}); 
             });
       }
 }
@@ -142,22 +142,22 @@ Custom
 
 function setActive(name)
 {
-	document.getElementById(name).src = "https://raidcomp.mmo-champion.com/img/active.gif";
+	document.getElementById(name).src = "img/active.gif";
 }
 
 
 function setMaybe(name)
 {
-	if(document.getElementById(name).src != "https://raidcomp.mmo-champion.com/img/active.gif")
+	if(document.getElementById(name).src != "img/active.gif")
 	{
-		document.getElementById(name).src = "https://raidcomp.mmo-champion.com/img/maybe.gif";
+		document.getElementById(name).src = "img/maybe.gif";
 	}
 }
 
 
 function setInactive(name)
 {
-	document.getElementById(name).src = "https://raidcomp.mmo-champion.com/img/inactive.gif";
+	document.getElementById(name).src = "img/inactive.gif";
 }
 
 function resetBuffs()
@@ -795,15 +795,15 @@ function generateCount(comp)
 	  {
 		  if(buffs[i] >= 100)
 		  {
-			document.getElementById(indexToCategory[i]).src = "https://raidcomp.mmo-champion.com/img/active.gif";
+			document.getElementById(indexToCategory[i]).src = "img/active.gif";
 		  }
 		  else if (buffs[i] > 0)
 		  {
-			  document.getElementById(indexToCategory[i]).src = "https://raidcomp.mmo-champion.com/img/maybe.gif";
+			  document.getElementById(indexToCategory[i]).src = "img/maybe.gif";
 		  }
 		  else
 		  {
-			  document.getElementById(indexToCategory[i]).src = "https://raidcomp.mmo-champion.com/img/inactive.gif";
+			  document.getElementById(indexToCategory[i]).src = "img/inactive.gif";
 		  }
 	  }
 	  
