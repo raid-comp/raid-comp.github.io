@@ -1,0 +1,526 @@
+/****************************************************
+Defaults
+****************************************************/
+body
+{
+	background-color: #000000;
+	font-family: Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+ul, li
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:visited
+{
+	color: #1f77a7;
+	text-decoration: none;
+}
+
+a:hover, a:visited:hover
+{
+	color: #41a5dc;
+	text-decoration: none;
+}
+
+.heading
+{
+	margin-top: 10px;
+}
+
+.tag
+{
+	color: #e5cb3f;
+}
+
+.active, .active:visited
+{
+	color: #00ac00;
+}
+
+.inactive, .inactive:visited
+{
+	color: #6e6e6e;
+}
+
+.maybe, .maybe:visited
+{
+	color: #cbae43;
+}
+
+/****************************************************
+The building block for all draggables 
+****************************************************/
+.block 
+{ 
+	border: 1px solid black;
+	width: 120px; 
+	height: 16px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 100;
+	background-image: url('https://raidcomp.mmo-champion.com/img/baseblock.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	cursor: pointer;
+}
+
+.end
+{
+	margin-bottom: 6px;
+}
+/****************************************************
+Spot specifics - whats inside a block
+****************************************************/
+.spot
+{
+	margin: 1px 0 1px 1px;
+	padding: 0;
+	border: 0;
+	height: 13px;
+	width: 118px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.spot .name
+{	
+	float: left;
+	padding: 0;
+	width: 103px;
+}
+
+.spot img
+{
+	float: left;
+	width: 13px;
+	height: 13px;
+	vertical-align: bottom;
+	padding: 1px 0 0 0;
+	margin-right: 2px;
+}
+
+/****************************************************
+The building block for droppables 
+****************************************************/
+.slot 
+{ 
+	float: left;
+	background-color: #171717;
+	border-left: 1px solid #444444;
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #292929;
+	width: 122px; 
+	height: 18px;
+	margin: 0px; 
+	padding: 0px;
+}
+
+.top
+{
+	border-top: 1px solid #444444;
+}
+
+.bottom
+{
+	border-bottom: 1px solid #444444;
+}
+
+.slot-active 
+{
+}
+.slot-hover 
+{
+	background-color: #393939;
+}
+
+/****************************************************
+Group layouts
+****************************************************/
+.group
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 100%;
+	width: 120px;
+}
+
+.group1, .group3, .group5, .group7
+{
+	margin: 0 10px 15px 149px;
+}
+
+.group2, .group4, .group6, .group8
+{
+	margin: 0 0 15px 10px;
+}
+
+.group .desc
+{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+
+.group .block
+{
+	z-index: 50;
+}
+
+/****************************************************
+Overall layout
+****************************************************/
+#wrapper
+{
+	margin: 0 auto;
+	padding: 3px 10px;
+	width: 920px;
+	height: 830px;
+	z-index: -100;
+	cursor: default;
+	background-image: url("https://raidcomp.mmo-champion.com/img/bg8.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#header
+{
+	float: left;
+	width: 100%;
+	height: 45px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	border-bottom: 1px solid #444444;
+}
+
+#leftbar
+{
+	float: left;
+	width: 124px;
+	margin: 23px 0 0 55px;
+	padding: 0 0 10px 0;
+}
+
+#layout
+{
+	float: left;
+	width: 545px;
+	z-index: 100;
+	margin: 70px 0 0 0;
+	padding: 0;
+}
+
+#sidebar
+{
+	float: left;
+	width: 180px;
+	margin: 0 2px 35px 0;
+	padding: 0 0 0 0;
+}
+
+#footer
+{
+	clear: both;
+	margin: 0 auto;
+	padding: 0 50px;
+	width: 550px;
+	border-top: 1px solid #444444;
+	color: #636363;
+	font-size: 10px;
+	text-align: center;
+}
+
+#footer a
+{
+	cursor: pointer;
+}
+
+/****************************************************
+stacker layout
+****************************************************/
+#stacker
+{
+	width: 100%;
+}
+
+.box
+{
+	background-color: #171717;
+	border: 1px solid #444444;
+	width: 100%;
+	padding: 3px 0;
+	font-size: 10px;
+}
+
+.box a
+{
+	text-decoration: none;
+}
+
+.box a, a:visited
+{
+	cursor: help;
+}
+
+.box img
+{
+	width: 10px;
+	vertical-align: bottom;
+	padding: 1px 1px 1px 4px;
+	border: 0;
+}
+
+.box .cat 
+{
+	margin: 1px 0;
+}
+
+/****************************************************
+Tooltip
+****************************************************/
+.tooltipwrapper
+{
+    padding: 0 22px 0 0;
+    margin: 0;
+}
+
+.tooltip 
+{
+	border: 1px solid #444444;
+	background-image: url("https://raidcomp.mmo-champion.com/img/tooltip-bg.png");
+	background-repeat: repeat;
+	background-position: center;
+	padding: 0 0 2px 0;
+	margin: 0;
+}
+
+.tooltip a
+{
+	cursor: pointer;
+}
+
+.tooltip .txt
+{
+	font-size: 11px;
+}
+
+.tooltip .item
+{
+	height: 15px;
+	padding: 0 5px;
+
+}
+
+.tooltip .topic
+{
+	font-size: 11px;
+	padding: 3px;
+	margin-bottom: 1px;
+	font-weight: bold;
+}
+
+.tooltip img
+{
+	width: 10px;
+	height: 10px;
+	margin: 2px 2px 1px 0;
+	padding: 0;
+}
+
+/****************************************************
+Header
+****************************************************/
+#header 
+{
+	font-size: 10px;
+}
+
+#header #logo
+{
+	float: left;
+	margin: 5px 0 0 10px;
+	padding: 0;
+}
+
+#header .option
+{
+	float: right;
+	font-size: 10px;
+	margin: 27px 10px 0 0;
+	padding: 0 0 2px 0;
+	display: inline;
+}
+
+#header .option img
+{
+	margin: 0 2px 0 0;
+	padding: 0;
+	border: 0;
+	position: relative;
+	top: 3px;
+}
+
+#header a
+{
+	cursor: pointer;
+}
+
+/****************************************************
+Count
+****************************************************/
+.count
+{
+	background-color: #171717;
+	border: 1px solid #444444;
+	padding: 3px;
+	color: white;
+}
+
+#sidebar .count
+{
+	width: 174px;
+}
+
+#leftbar .count
+{
+	width: 113px;
+}
+
+.count div
+{
+	font-size: 10px;
+	margin: 0;
+	padding: 1px 0;
+	height: 10px;
+	color: #636363;
+}
+
+.count span
+{
+	color: #7e7e7e;
+	font-weight: bold;
+}
+
+/****************************************************
+jqModal stuff
+****************************************************/
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+.jqmWindow
+{
+    display: none;
+    
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    
+    margin-left: -320px;
+    width: 600px;
+    
+    background-color: black;
+    color: #eeeeee;
+    border: 1px solid #444444;
+    padding: 2px 20px 20px 20px;
+}
+
+.jqmOverlay
+{
+	background-color: #000;
+}
+
+.jqmWindow h2
+{
+	margin-bottom: 5px;
+	color: white;
+}
+
+.jqmWindow #close
+{
+	text-align: right;
+	position: relative;
+	top: 8px;
+}
+
+.jqmWindow .state
+{
+	margin-left: 30px;
+}
+
+.state img
+{
+	width: 10px;
+}
+
+/****************************************************
+Class colors - source https://www.wowwiki.com/Class_colors
+****************************************************/
+.deathknight, .deathknight:visited, .deathknight:hover, .deathknight:visited:hover
+{
+	color: #C41F3B;
+}
+
+.druid, .druid:visited, .druid:hover, .druid:visited:hover
+{
+	color: #FF7D0A;
+}
+
+.hunter, .hunter:visited, .hunter:hover, .hunter:visited:hover
+{
+	color: #ABD473;
+}
+
+.mage, .mage:visited, .mage:hover, .mage:visited:hover
+{
+	color: #69CCF0;
+}
+
+.paladin, .paladin:visited, .paladin:hover, .paladin:visited:hover
+{
+	color: #F58CBA;
+}
+
+.priest, .priest:visited, .priest:hover, .priest:visited:hover
+{
+	color: #FFFFFF;
+}
+
+.rogue, .rogue:visited, .rogue:hover, .rogue:visited:hover
+{
+	color: #FFF569;
+}
+
+.shaman, .shaman:visited, .shaman:hover, .shaman:visited:hover
+{
+	color: #2459FF;
+}
+
+.warlock, .warlock:visited, .warlock:hover, .warlock:visited:hover
+{
+	color: #9482CA;
+}
+
+.warrior, .warrior:visited, .warrior:hover, .warrior:visited:hover
+{
+	color: #C79C6E;
+}
+
+.monk, .monk:visited, .monk:hover, .monk:visited:hover
+{
+	color: #00FF96;
+}
