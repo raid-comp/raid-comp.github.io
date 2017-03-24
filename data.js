@@ -203,7 +203,7 @@ categorytooltip2providers['#tooltip22'] = ['paladin holy', 'paladin protection',
  
  
 categorytooltip2providers['#tooltip23'] = ['hunter beastmastery','warrior protection','rogue combat','rogue assassination','rogue subtlety'];
-categorytooltip2providers['#tooltip24'] = ['druid feralcombat','druid feraltank','hunter beastmastery','hunter survival','hunter marksmanship','warlock affliction', 'warlock demonology', 'warlock destruction'];
+categorytooltip2providers['#tooltip24'] = ['druid feralcombat','druid feraltank','druid balance','hunter beastmastery','hunter survival','hunter marksmanship','warlock affliction', 'warlock demonology', 'warlock destruction'];
 categorytooltip2providers['#tooltip25'] = ['druid feralcombat','druid feraltank','warlock affliction', 'warlock demonology', 'warlock destruction','warrior arms','warrior protection','warrior fury'];
 categorytooltip2providers['#tooltip26'] = ['druid feralcombat','druid feraltank','hunter beastmastery','warrior arms'];
 categorytooltip2providers['#tooltip27'] = ['hunter beastmastery','mage arcane','rogue combat','rogue assassination','rogue subtlety','warlock affliction', 'warlock demonology', 'warlock destruction'];
@@ -230,7 +230,7 @@ countClasses[2] = ['rogue assassination', 'rogue combat', 'rogue subtlety', 'dea
 urltoken2categories['1'] = ['catt1', 'catt4'];
 urltoken2categories['2'] = ['catt1', 'catt14', 'catt32'];
 urltoken2categories['3'] = ['catt1', 'catt36'];
-urltoken2categories['4'] = ['catt8', 'catt16', 'catt21', 'catt23','catt33','catt36','catt37'];
+urltoken2categories['4'] = ['catt8', 'catt16', 'catt21', 'catt24','catt33','catt36','catt37'];
 urltoken2categories['5'] = ['catt13', 'catt21','catt24','catt25','catt26','catt32'];
 urltoken2categories['6'] = ['catt9', 'catt21'];
 urltoken2categories['7'] = ['catt6', 'catt23','catt24','catt26','catt27','catt29','catt33'];
