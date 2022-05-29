@@ -323,6 +323,8 @@ function generateCount(comp)
 				setActive("Horn of Winter");
 				buffs[4]+=100;
 				setActive("Abomination's Might");
+				buffs[32]+=100;
+				setActive("Improved Icy Touch");
 			}
 			if(spec == 'deathknight frost')
 			{

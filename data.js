@@ -211,7 +211,7 @@ categorytooltip2providers['#tooltip28'] = ['paladin protection','paladin retribu
 categorytooltip2providers['#tooltip29'] = ['hunter beastmastery','hunter survival','hunter marksmanship','rogue combat','rogue assassination','rogue subtlety'];
 categorytooltip2providers['#tooltip30'] = ['paladin protection','paladin holy','paladin retribution'];
 categorytooltip2providers['#tooltip31'] = ['paladin protection','paladin holy','paladin retribution'];
-categorytooltip2providers['#tooltip32'] = ['deathknight frost','druid feralcombat','druid feraltank','paladin protection','warrior arms','warrior protection','warrior fury'];
+categorytooltip2providers['#tooltip32'] = ['deathknight blood', 'deathknight frost','druid feralcombat','druid feraltank','paladin protection','warrior arms','warrior protection','warrior fury'];
 categorytooltip2providers['#tooltip33'] = ['druid balance','hunter survival','hunter beastmastery','hunter marksmanship'];
 categorytooltip2providers['#tooltip34'] = ['rogue combat','warrior arms'];
 categorytooltip2providers['#tooltip35'] = ['mage fire','mage frost','warlock demonology','warlock affliction'];
@@ -227,7 +227,7 @@ countClasses[2] = ['rogue assassination', 'rogue combat', 'rogue subtlety', 'dea
 
 
 
-urltoken2categories['1'] = ['catt1', 'catt4'];
+urltoken2categories['1'] = ['catt1', 'catt4', 'catt32'];
 urltoken2categories['2'] = ['catt1', 'catt14', 'catt32'];
 urltoken2categories['3'] = ['catt1', 'catt36'];
 urltoken2categories['4'] = ['catt8', 'catt16', 'catt21', 'catt24','catt33','catt36','catt37'];
